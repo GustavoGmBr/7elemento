@@ -1,0 +1,66 @@
+@use "../colors" as *;
+@use "sass:color";
+@use "../font" as *;
+
+body {
+    background: $shadow-1;
+    height: 120vh;
+}
+
+.card {
+    background: transparentize($mystic-emerald, 0.5);
+    border: 1.5px solid $ancient-moss;
+    .card-titulo {
+        color: $void-4;
+        font-size: 1.3em;
+        font-weight: bold;
+        font-family: $font-menu;
+        border-radius: 4px;
+    }
+    .card-texto {
+        font-size: 0.9em;
+        font-weight: bold;
+        color: $aged-ink;
+        font-family: $font-texto;
+        text-align: center;
+    }
+    .botao {
+        background: linear-gradient(
+            120deg,
+            #140e1e 0%,
+            $void-5 15%,
+            $void-4 35%,
+            $shadow-2 70%,
+            $shadow-3 80%,
+            $shadow-4 100%
+        );
+        border-radius: 5px;
+        color: $fire-2;
+        font-weight: 400;
+        align-self: center;
+    }
+}
+.boas-vindas {
+    color: $enchanted-ruby;
+    font-family: $font-menu;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    .texto-1 {
+        font-size: 3em;
+        font-weight: 500;
+        text-shadow: 1px 1px 0 $fire-4;
+        padding-bottom: 5px;
+    }
+    .texto-2 {
+        font-size: 2em;
+        font-weight: 400;
+        text-shadow: 1px 1px 0 $fire-4;
+        padding-bottom: 5px;
+    }
+    .texto-3 {
+        font-size: 1.5em;
+        font-weight: 300;
+        text-shadow: 1px 1px 0 $fire-4;
+        padding-bottom: 5px;
+    }
+}

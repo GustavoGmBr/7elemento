@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "nome": "Capítulo 1 - O Início",
+    "rota": "/7elemento/biblioteca/Capitulo1"
+  },
+  {
+    "id": 2,
+    "nome": "Capítulo 2 - O Início",
+    "rota": "/7elemento/biblioteca/capitulo2"
+  }
+]

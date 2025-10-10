@@ -1,0 +1,119 @@
+/* BibliotecaPersonagem.module.scss */
+.biblioteca-container {
+  padding: 32px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filtro-container {
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+.filtro-container .filtro-select {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+.filtro-container .filtro-select:focus {
+  outline: none;
+  border-color: #326dff;
+}
+
+.cards-grid {
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  margin-bottom: 32px;
+}
+
+.card-wrapper {
+  width: 100%;
+  max-width: 550px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.card-wrapper:hover, .card-wrapper:focus {
+  transform: translateY(-1px) scale(1.2);
+}
+
+/* Detalhe do personagem (modal ou card detalhado) */
+.card-personagem-detalhado-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 10, 10, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.card-personagem-detalhado-content {
+  background: #fff;
+  padding: 32px 24px 24px 24px;
+  border-radius: 16px;
+  max-width: 96vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+  position: relative;
+  animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 8px;
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .biblioteca-container {
+    padding: 16px 2vw;
+  }
+  .filtro-container {
+    margin-bottom: 14px;
+  }
+  .cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+  }
+  .card-wrapper {
+    max-width: 95vw;
+    width: 100%;
+  }
+  .card-personagem-detalhado-content {
+    padding: 16px 6px 6px 6px;
+  }
+}/*# sourceMappingURL=BibliotecaPersonagem.css.map */

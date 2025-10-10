@@ -1,0 +1,71 @@
+@use "../colors" as *;
+@use "sass:color";
+@use "../font" as *;
+
+.sidebar-capitulos {
+    width: 260px;
+    min-height: 100%;
+    background: linear-gradient(
+        120deg,
+        #140e1e 0%,
+        $void-5 15%,
+        $void-4 35%,
+        $shadow-2 70%,
+        $shadow-3 80%,
+        $shadow-4 100%
+    );
+    border-right: 1px solid #ddd;
+    padding: 24px 12px 12px 12px;
+    left: 0;
+    z-index: 30;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    margin-bottom: 12px;
+}
+
+.sidebar-search {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background: $shadow-3;
+    color: $bronze;
+    font-weight: bold;
+}
+
+.sidebar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1 1 auto;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 10px 12px;
+    color: $topaz-light;
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.sidebar-link:hover {
+    background: $void-4;
+    font-size: 1.2em;
+    color: $mystic-emerald;
+}
+.sidebar-search::placeholder {
+    color: $air-1; /* Cor mais clara, por exemplo */
+    opacity: 1; /* Garante que o Firefox não escureça o placeholder por padrão */
+}
+.sidebar-empty {
+    padding: 8px 12px;
+    color: #a61127;
+    font-size: 0.95rem;
+}

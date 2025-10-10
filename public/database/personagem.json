@@ -1,0 +1,53 @@
+[
+  {
+    "id": "char-001",
+    "imagem": "https://preview.redd.it/wqs9lam1cpd61.jpg?width=640&crop=smart&auto=webp&s=a2d2d964f4de1cf3d2dea67d81ab0e71fa00ee81",
+    "nome": "Lysa Storm",
+    "titulo": "A Dama dos Ventos",
+    "raca": "Elfa Arcana",
+    "elementosNaturais": [
+      "Vento",
+      "Água"
+    ],
+    "elementosPrimordiais": [
+      "Luz"
+    ],
+    "capitulos": [
+      {
+        "capitulo": 1,
+        "rank": "C",
+        "nivel": 5,
+        "situacao": "Ativa",
+        "ultimaAparicao": "Capítulo 3"
+      },
+      {
+        "capitulo": 2,
+        "rank": "B",
+        "nivel": 12,
+        "situacao": "Em Missão",
+        "ultimaAparicao": "Capítulo 5"
+      },
+      {
+        "capitulo": 3,
+        "rank": "A",
+        "nivel": 20,
+        "situacao": "Ferida em Batalha",
+        "ultimaAparicao": "Capítulo 8"
+      }
+    ],
+    "equipamentos": [
+      {
+        "nome": "Arco Celestial",
+        "ranque": "Celestial"
+      },
+      {
+        "nome": "Aljava Infinita",
+        "ranque": "Lendario"
+      },
+      {
+        "nome": "Manto da Brisa",
+        "ranque": "Mistico"
+      }
+    ]
+  }
+]

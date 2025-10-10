@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+.sidebar-capitulos {
+  width: 260px;
+  min-height: 100%;
+  background: linear-gradient(120deg, #140e1e 0%, #140e1e 15%, #38285c 35%, #9d99ba 70%, #5b5576 80%, #312e43 100%);
+  border-right: 1px solid #ddd;
+  padding: 24px 12px 12px 12px;
+  left: 0;
+  z-index: 30;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  margin-bottom: 12px;
+}
+
+.sidebar-search {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: #5b5576;
+  color: #b8773d;
+  font-weight: bold;
+}
+
+.sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 10px 12px;
+  color: #f7d776;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.sidebar-link:hover {
+  background: #38285c;
+  font-size: 1.2em;
+  color: #429b7d;
+}
+
+.sidebar-search::-moz-placeholder {
+  color: #eaf6fb; /* Cor mais clara, por exemplo */
+  opacity: 1; /* Garante que o Firefox não escureça o placeholder por padrão */
+}
+
+.sidebar-search::placeholder {
+  color: #eaf6fb; /* Cor mais clara, por exemplo */
+  opacity: 1; /* Garante que o Firefox não escureça o placeholder por padrão */
+}
+
+.sidebar-empty {
+  padding: 8px 12px;
+  color: #a61127;
+  font-size: 0.95rem;
+}/*# sourceMappingURL=SidebarCapitulos.css.map */

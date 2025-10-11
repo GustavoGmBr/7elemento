@@ -11,12 +11,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/7elemento" element={<Inicio />} />
-        <Route path="/7elemento/biblioteca" element={<BibliotecaCapitulos />}>
+        <Route path="/biblioteca" element={<BibliotecaCapitulos />}>
           {/* Rotas dos capítulos importadas como array */}
           {capitulosRoutes}
         </Route>
-        <Route path="/7elemento/personagem" element={<BibliotecaPersonagem />} />
+        <Route path="/personagem" element={<BibliotecaPersonagem />} />
       </Routes>
     </BrowserRouter>
   );

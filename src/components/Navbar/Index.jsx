@@ -25,10 +25,10 @@ function Navbar() {
                                 </svg></button>
                             </li>
                             <li>
-                                <a href="/7elemento/biblioteca" class="navbar-list-item">Capitulos</a>
+                                <a href="/biblioteca" class="navbar-list-item">Capitulos</a>
                             </li>
                             <li>
-                                <a href="/7elemento/personagem" class="navbar-list-item">Personagens</a>
+                                <a href="/personagem" class="navbar-list-item">Personagens</a>
                             </li>
                         </ul>
                     </div>

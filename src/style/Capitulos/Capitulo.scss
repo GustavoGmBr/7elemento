@@ -1,0 +1,183 @@
+@use "../colors" as *;
+@use "sass:color";
+
+/* ===== Reset e comportamento global ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== Wrapper principal ===== */
+.capitulo-wrapper {
+    position: relative;
+    display: flex; // Sidebar e main lado a lado
+    min-height: 100vh; // Wrapper ocupa tela cheia
+    margin-top: 30px;
+}
+
+/* ===== Sidebar e navegação ===== */
+.capitulo-sidebar {
+    width: 260px;
+    min-width: 200px;
+    height: 100vh;
+    border-right: 2px solid $void-3;
+    padding: 32px 20px 20px 24px;
+    background: linear-gradient(
+        120deg,
+        #140e1e 0%,
+        $void-5 15%,
+        $void-4 35%,
+        $shadow-2 70%,
+        $shadow-3 80%,
+        $shadow-4 100%
+    );
+    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.06);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2001;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+
+    // Fecha (mobile)
+    &.closed {
+        transform: translateX(-110%);
+    }
+
+    .sidebar-title {
+        font-weight: 700;
+        margin-bottom: 1em;
+        letter-spacing: 0.05em;
+        color: $water-3;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 12px 20px;
+        border-radius: 8px;
+        color: $topaz-light;
+        text-decoration: none;
+        font-weight: 600;
+        margin-bottom: 4px;
+        transition: background 0.2s;
+
+        &:hover,
+        &:focus {
+            background: color.scale($void-3, $lightness: -5%);
+        }
+    }
+}
+
+/* ===== Botão hamburger/menu ===== */
+.menu-toggle {
+    position: absolute;
+    top: -10vh;
+    left: -2vh;
+    z-index: 2000;
+    background: linear-gradient(
+        120deg,
+        #140e1e 0%,
+        $void-5 15%,
+        $void-4 35%,
+        $shadow-2 70%,
+        $shadow-3 80%,
+        $shadow-4 100%
+    );
+    color: $topaz-light;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 1.3em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: none; // Desktop oculta
+
+    &:hover,
+    &:focus {
+        background: color.scale($water-3, $lightness: -7%);
+    }
+}
+
+/* ===== Overlay para mobile ===== */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.overlay.open {
+    display: block;
+}
+
+/* ===== Main/corpo do capítulo ===== */
+.capitulo-main {
+    flex: 1 1 auto;
+    margin-left: 260px; // espaço sidebar desktop
+    padding: 36px 32px;
+    transition: margin-left 0.3s;
+
+    @media (max-width: 750px) {
+        margin-left: 0;
+        padding: 32px 8px;
+    }
+}
+
+/* ===== Navegação de botões extra (exemplo) ===== */
+.navegacao-botoes {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2em;
+
+    button {
+        font-size: 1.05em;
+        padding: 0.7em 1.5em;
+        background: $water-3;
+        color: $void-4;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &:hover,
+        &:focus {
+            background: color.scale($water-3, $lightness: -7%);
+        }
+    }
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 750px) {
+    // Sidebar esconde por padrão no mobile
+    .capitulo-sidebar {
+        transform: translateX(-110%);
+        position: fixed;
+        &.open {
+            transform: translateX(0);
+        }
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .overlay {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .navegacao-botoes button {
+        font-size: 0.98em;
+        padding: 0.6em 1em;
+    }
+    .navegacao-botoes {
+        gap: 0.7rem;
+    }
+}
+    

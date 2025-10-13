@@ -1,0 +1,192 @@
+@use "../colors" as *;
+@use "sass:color";
+@use "../font" as *;
+.texto {
+    position: inherit;
+    /* agora mais próximo do topo */
+    padding: 1.3rem 1.2rem 1.2rem 1.2rem;
+    font-size: 1.17em;
+    line-height: 1.7;
+    font-family: "Georgia", "Times New Roman", serif;
+    color: black; // usa sua paleta
+    border-radius: 12px;
+    letter-spacing: 0.01em;
+    text-align: justify; // para blocos longos
+    transition: background 0.15s;
+    text-indent: 2em;
+
+    @media (max-width: 800px) {
+        padding: 1rem 4vw 1.1rem 4vw;
+        margin: 0.8rem auto 1.8rem auto;
+        /* agora mais próximo do topo */
+        font-size: 1.07em;
+        max-width: 97vw;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1em;
+        margin: 0.8rem auto 1.8rem auto;
+        /* agora mais próximo do topo */
+        padding: 0.85rem 3vw;
+    }
+}
+
+div .texto {
+    border: 2px solid rgba($color: #1d1d1d, $alpha: 0.3);
+    border-radius: 5px;
+    h2 {
+        font-size: 1.7em;
+        font-weight: bold;
+        font-family: $font-menu;
+        padding-bottom: 10px;
+    }
+    h3 {
+        font-size: 1.5em;
+        font-weight: 400;
+        font-family: $font-menu;
+    }
+}
+
+/* Bloco de diálogo: mais espaço e ajuste de largura em telas pequenas */
+.bloco-dialogo {
+    text-align: left !important; // para blocos longos
+    margin: 2rem auto 1.5rem auto;
+    padding: 1.2rem 1rem 1.2rem 1.8rem;
+    text-align: left;
+    position: relative;
+    word-break: break-word;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    max-width: 670px;
+    min-width: 0;
+    /* Garante responsividade */
+    font-size: 1.1rem;
+    overflow-wrap: break-word;
+}
+
+.pensamento {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 2rem;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #007bff;
+    padding-left: 1rem;
+    background: #007bff73;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: background 0.18s;
+    max-width: 90vw;
+    word-break: break-word;
+}
+
+/* Ajustes para telas médias */
+@media (max-width: 800px) {
+    .pensamento {
+        text-align: left;
+        margin-left: 1rem;
+        padding-left: 0.7rem;
+        font-size: 0.8em;
+        max-width: 98vw;
+    }
+}
+
+/* Ajustes para telas pequenas (smartphones) */
+@media (max-width: 480px) {
+    .pensamento {
+        margin-left: 0.4rem;
+        padding-left: 0.5rem;
+        font-size: 0.98em;
+        border-left-width: 2.2px;
+    }
+}
+
+.dialogue-line {
+    margin-top: 0.6rem;
+    font-size: 1.09em;
+    word-break: break-word;
+}
+
+.character-name {
+    display: inline-block;
+    font-weight: bold;
+    color: #198522;
+    font-size: 1.12em;
+    margin-right: 0.4em;
+}
+
+.expression {
+    font-style: italic;
+    color: #6b6b6b;
+    margin-left: 0.4em;
+    font-size: 0.98em;
+}
+
+.after-action {
+    display: block;
+    margin-top: 0.22rem;
+    color: #ad621e;
+    font-style: italic;
+    font-size: 0.92em;
+    word-break: break-word;
+}
+
+.tone {
+    font-style: italic;
+    color: #007bff;
+    margin-left: 0.23em;
+    font-size: 1em;
+}
+
+/* Responsividade: regras para telas pequenas */
+@media (max-width: 600px) {
+    .bloco-dialogo {
+        margin: 1.2rem 0.5rem 0.8rem 0.5rem;
+        padding: 0.8rem 0.6rem 0.8rem 1rem;
+        font-size: 0.98em;
+        border-radius: 7px;
+        max-width: 100%;
+    }
+
+    .dialogue-line {
+        font-size: 1em;
+    }
+
+    .character-name {
+        font-size: 1em;
+    }
+
+    .expression {
+        font-size: 0.93em;
+    }
+}
+
+/* Opcional: melhor espaçamento entre falas diferentes */
+.bloco-dialogo + .bloco-dialogo {
+    margin-top: 0.5rem;
+}
+
+// Bloco de diálogo visual
+.bloco-dialogo {
+    margin: 2rem 0 1.5rem 2rem;
+    padding: 1rem 1rem 1rem 2rem;
+    border-left: 8px solid black; // Cor padrão (pode ser sobrescrito)
+    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    max-width: 90%;
+}
+
+// Variação por gênero do bloco
+.bloco-dialogo.masculino {
+    border-left-color: #007bff;
+}
+
+.bloco-dialogo.feminino {
+    border-left-color: #e83e8c;
+}
+
+.bloco-dialogo.sem-genero {
+    border-left-color: #6c757d;
+}

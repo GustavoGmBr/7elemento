@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+body {
+  background: #e3e3f1;
+  height: 120vh;
+}
+
+.card {
+  background: rgba(66, 155, 125, 0.5);
+  border: 1.5px solid #62815d;
+}
+.card .card-titulo {
+  color: #38285c;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: "Cinzel Decorative", serif;
+  border-radius: 4px;
+}
+.card .card-texto {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #373235;
+  font-family: "Cinzel Decorative", serif;
+  text-align: center;
+}
+.card .botao {
+  background: linear-gradient(120deg, #140e1e 0%, #140e1e 15%, #38285c 35%, #9d99ba 70%, #5b5576 80%, #312e43 100%);
+  border-radius: 5px;
+  color: #ffd17b;
+  font-weight: 400;
+  align-self: center;
+}
+
+.boas-vindas {
+  color: #a61127;
+  font-family: "Cinzel Decorative", serif;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.boas-vindas .texto-1 {
+  font-size: 3em;
+  font-weight: 500;
+  text-shadow: 1px 1px 0 #bf372a;
+  padding-bottom: 5px;
+}
+.boas-vindas .texto-2 {
+  font-size: 2em;
+  font-weight: 400;
+  text-shadow: 1px 1px 0 #bf372a;
+  padding-bottom: 5px;
+}
+.boas-vindas .texto-3 {
+  font-size: 1.5em;
+  font-weight: 300;
+  text-shadow: 1px 1px 0 #bf372a;
+  padding-bottom: 5px;
+}/*# sourceMappingURL=inicio.css.map */

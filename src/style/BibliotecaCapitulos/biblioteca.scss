@@ -1,0 +1,44 @@
+@use "../colors" as *;
+@use "sass:color";
+.btn-voltar {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem; // py-2 px-4
+    border-radius: 0.5rem; // rounded-lg
+    font-size: 0.875rem; // text-sm
+    font-weight: 500; // font-medium
+    background: linear-gradient(
+        120deg,
+        #140e1e 0%,
+        $void-5 15%,
+        $void-4 35%,
+        $shadow-2 70%,
+        $shadow-3 80%,
+        $shadow-4 100%
+    );
+    color: $topaz-light;
+    box-shadow:
+        0 1px 2px 0 rgba(0, 0, 0, 0.05),
+        0 1.5px 6px 0 rgba(0, 0, 0, 0.08);
+    transition: background 0.2s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    // Efeito hover/focus
+    &:hover,
+    &:focus-visible {
+        background-color: #1d4ed8; // bg-blue-700
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #60a5fa; // focus:ring-2
+    }
+
+    // Fixado no canto inferior direito da tela
+    position: absolute;
+    top: 5rem; // Distância da base da tela (ajuste se necessário)
+    right: 1rem; // Distância da lateral direita da tela
+    padding: 0.9em 1.3em;
+    z-index: 1000; // Garante que apareça acima de outros elementos
+}

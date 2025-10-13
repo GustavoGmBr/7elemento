@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* ===== Reset e comportamento global ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Wrapper principal ===== */
+.capitulo-wrapper {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  margin-top: 30px;
+}
+
+/* ===== Sidebar e navegação ===== */
+.capitulo-sidebar {
+  width: 260px;
+  min-width: 200px;
+  height: 100vh;
+  border-right: 2px solid #7562b3;
+  padding: 32px 20px 20px 24px;
+  background: linear-gradient(120deg, #140e1e 0%, #140e1e 15%, #38285c 35%, #9d99ba 70%, #5b5576 80%, #312e43 100%);
+  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.06);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2001;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+.capitulo-sidebar.closed {
+  transform: translateX(-110%);
+}
+.capitulo-sidebar .sidebar-title {
+  font-weight: 700;
+  margin-bottom: 1em;
+  letter-spacing: 0.05em;
+  color: #3596bf;
+}
+.capitulo-sidebar .nav-link {
+  display: block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #f7d776;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 4px;
+  transition: background 0.2s;
+}
+.capitulo-sidebar .nav-link:hover, .capitulo-sidebar .nav-link:focus {
+  background: rgb(108.7969957082, 88.6675965665, 174.4824034335);
+}
+
+/* ===== Botão hamburger/menu ===== */
+.menu-toggle {
+  position: absolute;
+  top: -10vh;
+  left: -2vh;
+  z-index: 2000;
+  background: linear-gradient(120deg, #140e1e 0%, #140e1e 15%, #38285c 35%, #9d99ba 70%, #5b5576 80%, #312e43 100%);
+  color: #f7d776;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7em 1.3em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: none;
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  background: rgb(49.29, 139.5, 177.63);
+}
+
+/* ===== Overlay para mobile ===== */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.overlay.open {
+  display: block;
+}
+
+/* ===== Main/corpo do capítulo ===== */
+.capitulo-main {
+  flex: 1 1 auto;
+  margin-left: 260px;
+  padding: 36px 32px;
+  transition: margin-left 0.3s;
+}
+@media (max-width: 750px) {
+  .capitulo-main {
+    margin-left: 0;
+    padding: 32px 8px;
+  }
+}
+
+/* ===== Navegação de botões extra (exemplo) ===== */
+.navegacao-botoes {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2em;
+}
+.navegacao-botoes button {
+  font-size: 1.05em;
+  padding: 0.7em 1.5em;
+  background: #3596bf;
+  color: #38285c;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.navegacao-botoes button:hover, .navegacao-botoes button:focus {
+  background: rgb(49.29, 139.5, 177.63);
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 750px) {
+  .capitulo-sidebar {
+    transform: translateX(-110%);
+    position: fixed;
+  }
+  .capitulo-sidebar.open {
+    transform: translateX(0);
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .overlay {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .navegacao-botoes button {
+    font-size: 0.98em;
+    padding: 0.6em 1em;
+  }
+  .navegacao-botoes {
+    gap: 0.7rem;
+  }
+}/*# sourceMappingURL=Capitulo.css.map */

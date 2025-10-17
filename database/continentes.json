@@ -1,0 +1,246 @@
+[
+  {
+    "nome": "Eryndor",
+    "descricao": "Eryndor é um continente lendário onde a magia pulsa viva em cada elemento da natureza. Suas florestas são encantadas e montanhas feitas de cristal, servindo de morada para povos ancestrais. O equilíbrio e a tensão mágica fazem parte da ordem desse lugar, onde as árvores, rios e até mesmo o vento guardam e transmitem poderes antigos.",
+    "populacao": {
+      "total": "Aproximadamente 600 mil habitantes",
+      "porRaca": [
+        {
+          "raca": "Elfos",
+          "quantidade": "Aproximadamente 375 mil"
+        },
+        {
+          "raca": "Anões",
+          "quantidade": "Aproximadamente 220 mil"
+        },
+        {
+          "raca": "Humanos",
+          "quantidade": "Aproximadamente 25 mil"
+        }
+      ]
+    },
+    "racaPredominante": "Elfos",
+    "localizacao": "Situado entre mares místicos ao leste e montanhas de cristal ao oeste. As florestas centrais de Lorialis ocupam grande parte do território oriental, enquanto as Montanhas de Kaldur se estendem pelo oeste, criando uma barreira natural e mágica. Ao norte, há tundras mágicas, e ao sul, pradarias férteis.",
+    "geografia": [
+      "Florestas encantadas: Árvores antigas e colossais, com flora luminosa e fauna mística.",
+      "Montanhas cristalinas: Cadeias montanhosas que brilham à distância, repletas de cavernas, rios subterrâneos e pedras raras.",
+      "Rios mágicos subterrâneos: Correntes ocultas de energia fluindo sob a superfície, abastecendo cidades e florestas com poder arcano.",
+      "Pradarias e tundras: Pastagens férteis ao sul e regiões geladas ao norte, ambas influenciadas por correntes de poder mágico."
+    ],
+    "clima": "Em geral, temperado e úmido, com neblina constante em regiões de floresta e microclimas mágicos. As montanhas apresentam frio intenso, enquanto alguns vales e pradarias têm clima mais ameno devido à influência da magia.",
+    "principaisCidades": [
+      {
+        "nome": "Lorialis",
+        "descricao": "Cidade élfica situada no coração da Floresta Cantante. Suas estruturas são erguidas nos galhos das árvores mais antigas, ligadas por pontes de cipó e luzes mágicas. É o centro cultural dos elfos, repleto de bibliotecas vivas e teatros naturais onde canções ancestrais ecoam."
+      },
+      {
+        "nome": "Kaldur",
+        "descricao": "Cidade dos Anões construída nos salões escavados das montanhas de cristal. Conhecida por suas forjas mágicas, minas brilhantes e grandes salões de reunião, Kaldur é o coração econômico e industrial de Eryndor, além de ser famosa por suas armas e artefatos encantados."
+      },
+      {
+        "nome": "Doralyn",
+        "descricao": "Pequena cidade de humanos na margem das pradarias do sul, serve como ponto de contato e comércio, marcada por sua diversidade e diplomacia entre raças."
+      }
+    ],
+    "linguas": [
+      "Élfico antigo",
+      "Anão rúnico",
+      "Comum de Eryndor"
+    ]
+  },
+  {
+    "nome": "Kaelthar",
+    "descricao": "Kaelthar é uma terra de extremos selvagens, onde desertos abrasadores ao sul se fundem com terras congeladas ao norte em um contraste brutal e primitivo. Marcas de uma guerra ancestral ainda ecoam no continente, quase extinguindo Lobisomens e Vampiros, que hoje vivem em pequenos clãs dispersos e perseguidos, lutando bravamente pela sobrevivência. Os desertos do sul, chamados Áreas de Azer'Khaal, são assolados por tempestades de fogo e ventos venenosos quase constantes. No extremo norte, os Picos de Grelhaen, montanhas congeladas e majestosas, são lar dos imponentes Gigantes, que esculpiram suas cidades no gelo e na pedra, governando Kaelthar com sabedoria rígida e ancestral. Humanos não sobrevivem nesse território hostil, sendo presas fáceis ou sucumbindo ao clima implacável. Em Kaelthar, apenas as criaturas mais fortes resistem, e sempre a um alto custo.",
+    "populacao": {
+      "total": "Aproximadamente 261 mil habitantes",
+      "porRaca": [
+        {
+          "raca": "Gigantes",
+          "quantidade": "Aproximadamente 260 mil"
+        },
+        {
+          "raca": "Vampiros",
+          "quantidade": "Aproximadamente 600"
+        },
+        {
+          "raca": "Lobisomens",
+          "quantidade": "Aproximadamente 400"
+        }
+      ]
+    },
+    "racaPredominante": "Gigantes",
+    "localizacao": "Kaelthar localiza-se em uma vasta região isolada, delimitada ao sul por desertos de fogo e ao norte por montanhas glaciares. A geografia extrema impede fácil acesso, tornando o continente quase inacessível às raças consideradas frágeis — especialmente humanos.",
+    "geografia": [
+      "Desertos abrasadores ao sul (Áreas de Azer'Khaal): regiões áridas com tempestades de fogo e ventos tóxicos constantes.",
+      "Montanhas gélidas ao norte (Picos de Grelhaen): cadeias congeladas e imponentes, abrigo dos Gigantes, cidades talhadas no gelo e pedra.",
+      "Planícies áridas e vales gelados no centro: zonas de transição quase inabitáveis, lar de clãs dispersos e territórios disputados.",
+      "Clãs dispersos em regiões hostis: Lobisomens e Vampiros espalhados em esconderijos e territórios de difícil acesso."
+    ],
+    "clima": "Sul: Árido, com tempestades de fogo e ventos tóxicos quase constantes. Norte: Gélido, com nevascas intensas e noites longas. Centro: Variedade extrema de temperatura, raramente habitável.",
+    "principaisCidades": [
+      {
+        "nome": "Urghor",
+        "descricao": "Capital dos Gigantes, inteiramente esculpida no gelo e pedra das montanhas do norte. É o centro político e cultural de Kaelthar, famosa por sua arquitetura monumental e salões ancestrais."
+      },
+      {
+        "nome": "Azer'Zhul",
+        "descricao": "Fortificação mística junto ao maior deserto do sul; refúgio de caçadores de tempestades e clãs exilados, com estruturas reforçadas contra ventos tóxicos."
+      },
+      {
+        "nome": "Val'Vaar",
+        "descricao": "Último reduto conhecido dos Lobisomens e Vampiros, localizado nas falésias sombrias do centro, oculto dos olhos dos Gigantes e protegido por magias ancestrais e geografia hostil."
+      }
+    ],
+    "linguas": [
+      "Gigântico",
+      "Ulvárico (fala dos clãs Lobisomens)",
+      "Sanguian (rito dos vampiros)"
+    ]
+  },
+  {
+    "nome": "Zarynthia",
+    "descricao": "Zarynthia é um continente de maravilhas etéreas, onde mares cintilam com luz própria e ilhas flutuantes permeiam os céus. As fronteiras entre mar, terra e ar são indefinidas, formando paisagens quase líquidas de magia e mistério. Dizem que os próprios ventos possuem vontade, transportando ilhas de cristais brilhantes e florestas suspensas entre nuvens. Aqui, os Marines dominam as profundezas oceânicas e os Ferais governam os céus, vivendo em harmonia instável e cheia de antigas tradições. Poucos humanos resistem nesse terreno mutável, abrigando-se em ilhotas ou entrando em alianças frágeis. Tudo em Zarynthia pulsa com energia sobrenatural: corais bioluminescentes, tempestades de luz líquida e rios gravitacionais compõem esse território inexplorado e quase impossível de cartografar.",
+    "populacao": {
+      "total": "Aproximadamente 300 mil habitantes",
+      "porRaca": [
+        {
+          "raca": "Marines",
+          "quantidade": "Aproximadamente 200 mil"
+        },
+        {
+          "raca": "Ferais",
+          "quantidade": "Aproximadamente 85 mil"
+        },
+        {
+          "raca": "Humanos",
+          "quantidade": "Aproximadamente 15 mil"
+        }
+      ]
+    },
+    "racaPredominante": "Marines",
+    "localizacao": "Zarynthia encontra-se além das rotas convencionais, cercada por mares de luz viva e tempestades elementares. Parte de seu território flutua entre correntes de vento e ilhas móveis, tornando a navegação e cartografia quase impossíveis para estrangeiros.",
+    "geografia": [
+      "Mares bioluminescentes e profundos, habitados por criaturas mágicas e cidades submersas.",
+      "Ilhas flutuantes de cristal, nuvem e rocha, suspendendo florestas inteiras acima do oceano.",
+      "Abismos abissais repletos de corais vivos e corredores de energia mágica.",
+      "Arquipélagos móveis, ilhotas que mudam de posição segundo a vontade dos ventos e das marés."
+    ],
+    "clima": "Extremamente instável e imprevisível: tempestades mágicas, calmarias intensas nos mares, ventos ciclônicos nas altitudes e alternância rápida entre períodos serenos e hostis.",
+    "principaisCidades": [
+      {
+        "nome": "Sinphora",
+        "descricao": "Metrópole submarina e capital dos Marines, composta por palácios cristalinos e jardins de corais brilhantes. Sinphora pulsa no coração do maior abismo de Zarynthia."
+      },
+      {
+        "nome": "Aerion",
+        "descricao": "Maior centro dos Ferais, situado sobre ilhas flutuantes de cristal, conectadas por pontes de nuvem e vapor. É famosa por sua arquitetura translúcida e governança conselhista."
+      },
+      {
+        "nome": "Arkhilion",
+        "descricao": "Último bastião dos humanos, construído em uma ilha-ponte rara, fixada por magias ancestrais. É protegida por barreiras etéreas e alianças instáveis com Ferais e Marines."
+      }
+    ],
+    "linguas": [
+      "Mareen (idioma dos Marines)",
+      "Aelithar (idioma dos Ferais)",
+      "Comum (dialeto dos humanos refugiados)"
+    ]
+  },
+  {
+    "nome": "Thalvaris",
+    "descricao": "Thalvaris é o coração pulsante do mundo, um vasto continente reverenciado pelo seu papel central na cultura, política e comércio global. Suas planícies férteis se estendem por quilômetros, entrelaçadas por rios sinuosos que alimentam florestas temperadas e uma terra exuberante, perfeita para a agricultura e o florescimento urbano. O continente é dominado por grandes reinos humanos, cujas cidades majestosas – como a imponente Eldora, sua capital – impressionam com suas catedrais góticas, castelos ancestrais e mercados exuberantes. Em Thalvaris, o som de carruagens, negociações e risos preenche o ar: aqui, o progresso humano encontra seu ápice. A vida urbana é dinâmica, marcada pelo avanço tecnológico, pelo desenvolvimento acadêmico e por robustas instituições políticas. Apesar de ser um ponto de convergência para culturas de todas as partes do mundo, os habitantes não-humanos são notadamente raros. Elfos e Anões sobrevivem em enclaves pequenos e reservados, afastando-se do cotidiano humano ou visitando como diplomatas e mercadores exóticos. Encontros com criaturas místicas são igualmente raros: a expansão das cidades e a domesticação da natureza em Thalvaris relegaram o místico à margem – a magia aqui é como um sussurro do passado, cada vez mais tênue. Thalvaris é, acima de tudo, um símbolo da ambição e engenhosidade humanas, um lugar em que a ordem, a cultura e o comércio florescem, mas onde a antiga magia do mundo lentamente se apaga, dando espaço a um novo capítulo da história civilizatória.",
+    "populacao": {
+      "total": "Aproximadamente 2,2 milhões",
+      "porRaca": [
+        {
+          "raca": "Humanos",
+          "quantidade": "Aproximadamente 2 milhões"
+        },
+        {
+          "raca": "Outras",
+          "quantidade": "Menos de 200 mil aproximadamente"
+        }
+      ],
+      "predominante": "Humanos"
+    },
+    "localizacao": "Centro do planeta, conectado por terra ou mar a vários outros continentes, com fronteiras formadas por rios largos, cadeias montanhosas e densas florestas.",
+    "geografia": [
+      "Vastíssimas planícies agrícolas",
+      "Rios caudalosos e rotas fluviais comerciais",
+      "Florestas temperadas e bosques domados",
+      "Poucas áreas selvagens remanescentes, preservadas por tradição ou superstição"
+    ],
+    "clima": "Temperado, com verões agradáveis e invernos frios, propício ao desenvolvimento de civilizações prósperas",
+    "cidades": [
+      {
+        "nome": "Eldora",
+        "descricao": "Capital de Thalvaris, conhecida por sua arquitetura monumental, universidades prestigiadas e mercados cosmopolitas."
+      },
+      {
+        "nome": "Verdelume",
+        "descricao": "Centro agrícola que abastece grande parte do continente, famoso por seus festivais de colheita."
+      },
+      {
+        "nome": "Karthen",
+        "descricao": "Antiga fortaleza que se tornou um polo industrial e comercial."
+      }
+    ],
+    "linguas": [
+      "Thalvariano (idioma comum entre os humanos)",
+      "Outros idiomas apenas em enclaves raciais ou círculos acadêmicos"
+    ]
+  },
+  {
+    "nome": "Solvarion",
+    "descricao": "Solvarion é o continente mais selvagem e indomado do mundo, onde a própria natureza reina com ferocidade e majestade. É o lar das lendárias raças de Dragões e Fadas, que convivem em um delicado equilíbrio em meio a uma paisagem cheia de perigos naturais: florestas tropicais densas, vulcões ativos e pântanos vivos. Dragões com escamas brilhantes guardam os segredos ancestrais nos picos vulcânicos e vales escondidos, enquanto as Fadas, mágicas e misteriosas, governam as florestas e lagos encantados. Para humanos, Solvarion é praticamente inabitável — tanto pelo ambiente hostil quanto pela presença de criaturas que não toleram intrusos.",
+    "populacao": {
+      "total": "Aproximadamente 150.000",
+      "porRaca": [
+        {
+          "raca": "Dragões",
+          "quantidade": "Aproximadamente 60 mil"
+        },
+        {
+          "raca": "Fadas",
+          "quantidade": "Aproximadamente 90 mil"
+        }
+      ],
+      "racaPredominante": "Fadas (maior número), mas possui grande equilíbrio com os Dragões devido ao seu poder."
+    },
+    "localizacao": "Solvarion localiza-se em uma região isolada do mundo, cercada por mares tempestuosos e difíceis de atravessar, o que contribui para seu isolamento e a preservação de suas características selvagens e mágicas.",
+    "geografia": [
+      "Florestas tropicais densas, cheias de vida mágica e predadores misteriosos.",
+      "Vulcões ativos com picos altos, onde dragões fazem suas moradas.",
+      "Pântanos fervilhantes de criaturas mágicas e elementos perigosos.",
+      "Diversidade de lagos encantados e vales ocultos."
+    ],
+    "clima": [
+      "Predominantemente tropical, com clima quente e úmido nas florestas.",
+      "Regiões próximas aos vulcões apresentam altas temperaturas e frequentes erupções.",
+      "Pântanos apresentam clima abafado e neblinas constantes."
+    ],
+    "cidades": [
+      {
+        "nome": "Vale de Ignea",
+        "descricao": "Lar principal dos Dragões, entre vulcões ativos; conhecido por cavernas de cristal, rios de lava e tesouros ancestrais."
+      },
+      {
+        "nome": "Sylvae Encantada",
+        "descricao": "Grande floresta mágica, com clareiras encantadas onde Fadas realizam assembleias e festivais de magia."
+      },
+      {
+        "nome": "Lagos de Lúmina",
+        "descricao": "Agrupamento de lagos cristalinos em meio à floresta, considerados sagrados pelas Fadas."
+      },
+      {
+        "nome": "Penhascos das Tempestades",
+        "descricao": "Zonas de difícil acesso, onde dragões solitários gostam de observar o mundo."
+      }
+    ],
+    "linguas": [
+      "Dracônico (dos Dragões)",
+      "Éloryn (das Fadas)",
+      "Vethari (ancestral, rara, dominada e entendida apenas por poucos das duas espécies)"
+    ]
+  }
+]

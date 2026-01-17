@@ -1,19 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br"> <!-- Alterado para Português Brasil -->
 
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Tailwind v4 via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <title>livro</title>
-  <script type="module" crossorigin src="/7elemento/assets/index-DsVZ-k9m.js"></script>
-  <link rel="stylesheet" crossorigin href="/7elemento/assets/index-DVGhFEYu.css">
+  
+  <title>Crônicas do Mundo Mágico</title>
+
+  <style type="text/css">
+    /* No Tailwind v4, estendemos o tema diretamente via CSS */
+    @theme {
+      --color-primary: var(--color-primary);
+      --color-secondary: var(--color-secondary);
+      --color-accent: var(--color-accent);
+      --color-bg-main: var(--color-bg);
+      --color-text-main: var(--color-text);
+      --font-custom: var(--font-main);
+    }
+  </style>
+  <script type="module" crossorigin src="/7elemento/assets/index-CqlqGSCQ.js"></script>
+  <link rel="stylesheet" crossorigin href="/7elemento/assets/index-B1ccyPyF.css">
 </head>
 
-<body>
+<body class="bg-bg-main text-text-main font-custom"> <!-- Classes aplicadas globalmente -->
   <div id="root"></div>
-  <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+  
+  
+  <!-- Removido o script manual do node_modules. 
+       A inicialização do Flowbite deve ser feita no main.jsx ou via CDN se preferir -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 </html>
